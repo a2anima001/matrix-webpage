@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="question1">
+        <p>Na sljedeće pitanje dobro promisli jer odgovor nemaš priliku za promjenom odgovora.</p>
+        <p>Jesi li spreman?</p>
+        <button onclick="answerQuestion1('Da')">Da</button>
+        <button onclick="answerQuestion1('Ne')">Ne</button>
+    </div>
+
+    <div id="question2" class="hidden">
+        <p>Jesi li sretan?</p>
+        <button onclick="answerQuestion2('Da')">Da</button>
+        <button onclick="answerQuestion2('Ne')">Ne</button>
+    </div>
+
+    <div id="question3" class="hidden">
+        <p>Želiš li da nastavimo korespondenciju?</p>
+        <button onclick="answerQuestion3('Da')">Da</button>
+        <button onclick="answerQuestion3('Ne')">Ne</button>
+    </div>
+
+    <div id="pauseMessage" class="hidden">
+        <p>Još nije vrijeme da kreneš sa odgovorima dalje. Uzmi pauzu od 5 minuta.</p>
+        <p id="timer"></p>
+    </div>
+
+    <div id="finalMessage" class="hidden">
+        <p>Javit ću ti se povratno ubrzo.</p>
+    </div>
+
+    <div id="blockedMessage" class="hidden">
+        <p>Pokušao si osvježiti stranicu ili ponovno odgovoriti. Stranica je zaključana!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
